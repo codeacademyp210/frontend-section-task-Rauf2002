@@ -194,3 +194,9 @@ h2 ,h4 {
     border-color: #fd602c
 }
 
+
+@media only screen and (min-width:768px) {
+    .slider-content {
+        display: flex;
+    }
+}

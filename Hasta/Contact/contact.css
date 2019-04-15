@@ -1,0 +1,188 @@
+.topList {
+    padding: 0
+}
+.topList  li{
+    padding: 0px 10px;
+    list-style-type: none;
+    font-size: 14px;
+    color: #8d8c8c;
+    transition: color 0.2s;
+    cursor: pointer;
+}
+.topList  li:hover {
+    color: #272727
+}
+.lineDiv {
+    height: 10px;
+    border-top: 1px solid #8d8c8c;
+    width: 100%; 
+}
+.link li{
+    padding: 4px 15px;
+    list-style-type: none;
+    font-size: 14px;
+
+}
+.link li a {
+    color: #8d8c8c;
+    transition: color 0.3s;
+}
+.link li a:hover {
+    color: #fd602c;
+    text-decoration: none;
+}
+.this {
+    color: #fd602c !important;
+}
+.headerImg{
+    position: relative;
+}
+.headerImg::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #27272791
+}
+.content {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+h2 ,h4 {
+    color: white
+}
+.hovered{
+    position: absolute;
+    z-index: 1;
+    display: none;
+    background-color: white;
+    margin-left: -3rem
+}
+.hovered li {
+    padding-left: 0;
+    color: #727272;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+.link li:hover .hovered{
+    display: block
+}
+.hovered li:hover {
+    color: #242424
+}
+
+/* Main starts */
+
+input {
+    width: 100%;
+    margin: 1rem 0;
+    text-indent: 2px;
+    color: #626262;
+    border-radius: 2px;
+    border: 1px solid #8d8c8c;
+    padding: 5px 15px
+}
+input:focus {
+    outline-color: green;
+    transition: 0.3s
+}
+.submit {
+    color: white;
+    background-color: #fd602c   ;
+    border-color: #fd602c;
+    border-radius: 1px;
+    outline: none;
+    padding:5px 3rem;
+    box-shadow: none; 
+    transition: all 0.5s;
+}
+.cancel {
+    color: #1d2938;
+    background: #E8E8E8;
+    border-color: #E8E8E8;
+    border-radius: 1px;
+    outline: none;
+    padding:5px 3rem;
+    box-shadow: none; 
+    transition: all 0.5s;
+}
+.submit:hover {
+    background-color: #1d2938;
+    border-color: #1d2938
+}
+.cancel:hover {
+    background-color: #c4c4c4;
+}
+
+/* Footer starts */
+
+.footerUl li{
+    color: #727272;
+    list-style-type: none;
+    padding: 0.5rem 0
+}
+.footerImg{
+    display: flex
+}
+.footerImg h5{
+    color: white
+}
+.footerImg p {
+    color:#727272
+}
+.footerImg small{
+    color: #494747
+}
+.footerImg img {
+    border-radius: 50%;
+}
+.tag{
+    padding: 5px 15px 5px 15px;
+    margin: 0 10px 10px 0;
+    color: #727272;
+    border: 1px solid #2e2e2e;
+    transition: color 0.5s;
+    cursor: pointer;
+}
+.thisTag{
+    color: #fd602c;
+    border-color: #fd602c
+}
+.tag:hover {
+    color: #fd602c;
+    border-color: #fd602c;
+}
+.useLinks p {
+    color: #727272;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+.useLinks p:hover {
+    color: white
+}
+.mediaIcon {
+    font-size: 1rem;
+    color: #fd602c;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 1rem;
+    background-color:white;
+    cursor: pointer;
+    transition:color 0.5s;
+}
+.mediaIcon:hover {
+    color:white;
+    background-color: #fd602c;
+    border-color: #fd602c
+}
+.mediaIconThis{
+    color:white;
+    background-color: #fd602c;
+    border-color: #fd602c
+}
+.error {
+    border-color: red
+    color: red
+}

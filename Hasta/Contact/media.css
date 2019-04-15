@@ -1,0 +1,8 @@
+@media only screen and (max-width:768px) {
+    .link li{
+        padding: 2px 3px
+    }
+    .footerContainer{
+        flex-direction: column
+    }   
+}

@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
 .topList {
     padding: 0
 }
@@ -75,45 +80,51 @@ h2 ,h4 {
 
 /* Main starts */
 
-input {
-    width: 100%;
-    margin: 1rem 0;
-    text-indent: 2px;
-    color: #626262;
-    border-radius: 2px;
-    border: 1px solid #8d8c8c;
-    padding: 5px 15px
+.sliderHeading {
+    color: #5e5e5e;
+    font: 15px/21px Roboto, sans-serif;
 }
-input:focus {
-    outline-color: green;
-    transition: 0.3s
-}
-.submit {
+.indicator {
+    background-color: #7c8b90;
+    font-size: 1rem;
+    border: none;
     color: white;
-    background-color: #fd602c   ;
-    border-color: #fd602c;
-    border-radius: 1px;
-    outline: none;
-    padding:5px 3rem;
-    box-shadow: none; 
-    transition: all 0.5s;
 }
-.cancel {
-    color: #1d2938;
-    background: #E8E8E8;
-    border-color: #E8E8E8;
-    border-radius: 1px;
-    outline: none;
-    padding:5px 3rem;
-    box-shadow: none; 
-    transition: all 0.5s;
+.snackInfo {
+    border:1px solid white;
+    background-color:white;
+    height:50%;
+    width: 70%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    transition: border-color 0.3s;
 }
-.submit:hover {
-    background-color: #1d2938;
-    border-color: #1d2938
+.snackInfo:hover {
+    background-color: #5e5e5e;
+    border-color: #5e5e5e;
 }
-.cancel:hover {
-    background-color: #c4c4c4;
+.snackInfo:hover  p {
+    color: white !important
+} 
+.img {
+    position: relative !important;
+    overflow: hidden;
+    z-index: 1;
+   
+}
+.img img {
+    transition: all 0.2s ease-in-out
+}
+.snack {
+    background-color: #333333;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+.img:hover img {
+    transform: translateY(-22%);
 }
 
 /* Footer starts */
@@ -182,7 +193,4 @@ input:focus {
     background-color: #fd602c;
     border-color: #fd602c
 }
-.error {
-    border-color: red;
-    color: red
-}
+

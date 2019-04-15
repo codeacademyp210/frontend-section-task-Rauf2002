@@ -13,24 +13,26 @@ let phonePattern = /^([+])([0-9])/
 
 
 
-function validateForm () {
-    if(nameInput.value == " " || emailInput.value == " " || submitButton.value == " ") {
+function validateForm() {
+    if (nameInput.value == "" || emailInput.value == "" || phoneInput.value == "") {
         alert("Inputs must be filled.")
+        nameInput.classList.add("error");
+        emailInput.classList.add("error");
+        phoneInput.classList.add("error")
+        return false
+    }
+    if (!nameInput.value.match(namePattern)) {
         nameInput.classList.add("error")
         return false
     }
-    if(!nameInput.value.match(namePattern)){
-        nameInput.classList.add("error")
-        return false
-    }
-    if(!emailInput.value.match(emailPattern)){
+    if (!emailInput.value.match(emailPattern)) {
         emailInput.classList.add("error")
         alert("Email input isn't filled correctly.")
         return false
     }
-    if(!phoneInput.value.match(phonePattern)){
+    if (!phoneInput.value.match(phonePattern)) {
         phoneInput.classList.add("error");
-        alert ("Phone input isn't filled correctly.")
+        alert("Phone input isn't filled correctly.")
     }
     return false
 }

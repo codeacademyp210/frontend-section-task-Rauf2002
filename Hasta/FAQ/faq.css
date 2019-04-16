@@ -104,3 +104,19 @@ h2 ,h4 {
     color: #7B7E85;
     margin: 1rem 0
 }
+.link2 {
+    padding: 0
+}
+.link2 li {
+    font-size: 14px
+}
+button {
+    background-color: white;
+    border: 0.001rem solid #e4e4e4;
+    padding: 0.4rem 1rem;
+    color: #727272
+}
+input {
+    border: 0.001rem solid #e4e4e4;
+    padding: 0.4rem 1rem; 
+}

@@ -23,6 +23,7 @@ function validateForm() {
     }
     if (!nameInput.value.match(namePattern)) {
         nameInput.classList.add("error")
+        alert("Name input contains only letters")
         return false
     }
     if (!emailInput.value.match(emailPattern)) {
@@ -32,7 +33,7 @@ function validateForm() {
     }
     if (!phoneInput.value.match(phonePattern)) {
         phoneInput.classList.add("error");
-        alert("Phone input isn't filled correctly.")
+        alert("Phone input contains only numbers and '+'")
     }
     return false
 }

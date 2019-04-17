@@ -1,0 +1,248 @@
+.topList {
+    padding: 0
+}
+.topList  li{
+    padding: 0px 10px;
+    list-style-type: none;
+    font-size: 14px;
+    color: #8d8c8c;
+    transition: color 0.2s;
+    cursor: pointer;
+}
+.topList  li:hover {
+    color: #272727
+}
+.lineDiv {
+    height: 10px;
+    border-top: 1px solid #8d8c8c;
+    width: 100%; 
+}
+.link li{
+    padding: 4px 15px;
+    list-style-type: none;
+    font-size: 14px;
+
+}
+.link li a {
+    color: #8d8c8c;
+    transition: color 0.3s;
+}
+.link li a:hover {
+    color: #fd602c;
+    text-decoration: none;
+}
+.this {
+    color: #fd602c !important;
+}
+.headerImg{
+    position: relative;
+}
+.headerImg::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #27272791
+}
+.content {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+h2 ,h4 {
+    color: white
+}
+.hovered{
+    position: absolute;
+    z-index: 1;
+    display: none;
+    background-color: white;
+    margin-left: -3rem
+}
+.hovered li {
+    padding-left: 0;
+    color: #727272;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+.link li:hover .hovered{
+    display: block
+}
+.hovered li:hover {
+    color: #242424
+}
+
+
+
+/* Main starts  */
+
+
+.dNone {
+    display: none
+}
+
+
+.greyP{
+    color:#727272;
+}
+.button {
+    border: 1px solid #fd602c;
+    border-radius: 2px;
+    background-color: #fd602c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+    transition: border-color 0.3s;
+}
+.button p {
+    color: white;
+    margin: 0;
+    cursor: pointer;
+    padding: 0.4rem 1rem;
+}
+.button:hover {
+    background-color: black;
+    border-color: black;
+}
+.parallax {
+    background-image: url("../Services/Photos/water.jpg");
+    background-attachment: fixed;
+    position: relative;
+    background-repeat: no-repeat
+}
+.parallax::before {
+    content: "";
+    background-color: #27272783;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.panel {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 1px;
+    cursor: pointer;
+}
+.openedText {
+    color:#727272
+}
+.bar {
+    background-color: #fd602c;
+    display: flex;
+    padding: 0.5rem ;
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+}
+.white {
+    background-color: white;
+    padding: 0.5rem;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+}
+.bar p {
+    color: white;
+    margin: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase
+}
+.info {
+    background-color: white;
+    transition: all 0.3s;
+}
+.before {
+    position: relative;
+    z-index: 1
+}
+.before img {
+    transition: all 0.5s
+}
+.after {
+    display: none;
+    background-color: white;
+    transition: all 0.3s;
+}
+.before div:first-child {
+    overflow: hidden;
+}
+.before:hover img {
+    transform:scale(1.1 , 1.1)
+}
+.before:hover .info {
+    transform: translateY(-90%)
+}
+.before:hover .after {
+    display: block
+}
+
+
+
+/* Footer starts */
+
+
+
+.footerUl li{
+    color: #727272;
+    list-style-type: none;
+    padding: 0.5rem 0
+}
+.footerImg{
+    display: flex
+}
+.footerImg h5{
+    color: white
+}
+.footerImg p {
+    color:#727272
+}
+.footerImg small{
+    color: #494747
+}
+.footerImg img {
+    border-radius: 50%;
+}
+.tag{
+    padding: 5px 15px 5px 15px;
+    margin: 0 10px 10px 0;
+    color: #727272;
+    border: 1px solid #2e2e2e;
+    transition: color 0.5s;
+    cursor: pointer;
+}
+.thisTag{
+    color: #fd602c;
+    border-color: #fd602c
+}
+.tag:hover {
+    color: #fd602c;
+    border-color: #fd602c;
+}
+.useLinks p {
+    color: #727272;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+.useLinks p:hover {
+    color: white
+}
+.mediaIcon {
+    font-size: 1rem;
+    color: #fd602c;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 1rem;
+    background-color:white;
+    cursor: pointer;
+    transition:color 0.5s;
+}
+.mediaIcon:hover {
+    color:white;
+    background-color: #fd602c;
+    border-color: #fd602c
+}
+.mediaIconThis{
+    color:white;
+    background-color: #fd602c;
+    border-color: #fd602c
+}

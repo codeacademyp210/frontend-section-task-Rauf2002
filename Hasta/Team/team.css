@@ -1,0 +1,121 @@
+.topList {
+    padding: 0
+}
+.topList  li{
+    padding: 0px 10px;
+    list-style-type: none;
+    font-size: 14px;
+    color: #8d8c8c;
+    transition: color 0.2s;
+    cursor: pointer;
+}
+.topList  li:hover {
+    color: #272727
+}
+.lineDiv {
+    height: 10px;
+    border-top: 1px solid #8d8c8c;
+    width: 100%; 
+}
+.link li{
+    padding: 4px 15px;
+    list-style-type: none;
+    font-size: 14px;
+
+}
+.link li a {
+    color: #8d8c8c;
+    transition: color 0.3s;
+}
+.link li a:hover {
+    color: #fd602c;
+    text-decoration: none;
+}
+.this {
+    color: #fd602c !important;
+}
+.headerImg{
+    position: relative;
+}
+.headerImg::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #27272791
+}
+.content {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+h2 ,h4 {
+    color: white
+}
+.hovered{
+    position: absolute;
+    z-index: 1;
+    display: none;
+    background-color: white;
+    margin-left: -3rem
+}
+.hovered li {
+    padding-left: 0;
+    color: #727272;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+.link li:hover .hovered{
+    display: block
+}
+.hovered li:hover {
+    color: #242424
+}
+
+
+
+/* Main starts */
+
+
+.greyP {
+    color: #727272
+}
+
+
+.orangeBar {
+    background-color: #fd602c;
+    display: flex;
+    justify-content: center;
+    height: 0;
+    transition: all 0.3s;
+    position: absolute;
+    bottom: 0;
+    width: 100%
+}
+.orangeBar i {
+    color: white;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+.orangeBar i:hover {
+    color: #272727
+}
+.infoBar {
+    background-color: #f7f7f7;
+    transition: background-color 0.3s;
+}
+.workerHolder:hover .infoBar {
+    background-color: #242424
+}
+.workerHolder:hover .infoBar h4 {
+    color:white !important
+}
+.imgHolder {
+    position: relative;
+    overflow: hidden;
+}
+.workerHolder:hover .orangeBar {
+     padding: 1rem;
+     height:15%
+}

@@ -81,6 +81,9 @@ h2 ,h4 {
 .greyP {
     color: #727272
 }
+.dNone {
+    display: none
+}
 
 
 .orangeBar {
@@ -118,4 +121,102 @@ h2 ,h4 {
 .workerHolder:hover .orangeBar {
      padding: 1rem;
      height:15%
+}
+.panel {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 1px;
+    cursor: pointer;
+}
+.openedText {
+    color:#727272
+}
+.bar {
+    background-color: #fd602c;
+    display: flex;
+    padding: 0.5rem ;
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+}
+.white {
+    background-color: white;
+    padding: 0.5rem;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+}
+.bar p {
+    color: white;
+    margin: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase
+}
+
+
+/* Footer starts */
+
+
+
+.footerUl li{
+    color: #727272;
+    list-style-type: none;
+    padding: 0.5rem 0
+}
+.footerImg{
+    display: flex
+}
+.footerImg h5{
+    color: white
+}
+.footerImg p {
+    color:#727272
+}
+.footerImg small{
+    color: #494747
+}
+.footerImg img {
+    border-radius: 50%;
+}
+.tag{
+    padding: 5px 15px 5px 15px;
+    margin: 0 10px 10px 0;
+    color: #727272;
+    border: 1px solid #2e2e2e;
+    transition: color 0.5s;
+    cursor: pointer;
+}
+.thisTag{
+    color: #fd602c;
+    border-color: #fd602c
+}
+.tag:hover {
+    color: #fd602c;
+    border-color: #fd602c;
+}
+.useLinks p {
+    color: #727272;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+.useLinks p:hover {
+    color: white
+}
+.mediaIcon {
+    font-size: 1rem;
+    color: #fd602c;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 1rem;
+    background-color:white;
+    cursor: pointer;
+    transition:color 0.5s;
+}
+.mediaIcon:hover {
+    color:white;
+    background-color: #fd602c;
+    border-color: #fd602c
+}
+.mediaIconThis{
+    color:white;
+    background-color: #fd602c;
+    border-color: #fd602c
 }

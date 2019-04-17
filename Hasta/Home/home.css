@@ -1,0 +1,130 @@
+.topList {
+    padding: 0
+}
+.topList  li{
+    padding: 0px 10px;
+    list-style-type: none;
+    font-size: 14px;
+    color: #8d8c8c;
+    transition: color 0.2s;
+    cursor: pointer;
+}
+.topList  li:hover {
+    color: #272727
+}
+.lineDiv {
+    height: 10px;
+    border-top: 1px solid #8d8c8c;
+    width: 100%; 
+}
+.link li{
+    padding: 4px 15px;
+    list-style-type: none;
+    font-size: 14px;
+
+}
+.link li a {
+    color: #8d8c8c;
+    transition: color 0.3s;
+}
+.link li a:hover {
+    color: #fd602c;
+    text-decoration: none;
+}
+.this {
+    color: #fd602c !important;
+}
+.headerImg{
+    position: relative;
+}
+.headerImg::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #27272791
+}
+.content {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+h2 ,h4 {
+    color: white
+}
+.hovered{
+    position: absolute;
+    z-index: 1;
+    display: none;
+    background-color: white;
+    margin-left: -3rem
+}
+.hovered li {
+    padding-left: 0;
+    color: #727272;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+.link li:hover .hovered{
+    display: block
+}
+.hovered li:hover {
+    color: #242424
+}
+
+
+/* Main starts */
+
+.slider {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.slider-container{
+    position: relative;
+    height: 100%;
+    transition: all 0.7s;
+}
+.slider .slider-item {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider .slider-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.slider .slider-button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    outline-style: none;
+}
+.slider .slider-button.slider-button-left{
+    left: 10px;
+}
+.slider .slider-button.slider-button-right{
+    right: 10px;
+}
+
+
+.slider-content {
+    position: absolute;
+    color: #fff;
+    font-size: 30px;
+}

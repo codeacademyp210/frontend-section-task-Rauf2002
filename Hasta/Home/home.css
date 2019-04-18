@@ -276,3 +276,168 @@ input {
     right: 2rem;
     bottom:14rem
 }
+.parallax {
+    background-image: url("./Photos/parallax.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative
+}
+.parallax::before {
+    background-color: #272727c9;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.pricing {
+    border: 1px solid #e4e4e4;
+    background-color: #e4e4e4;
+    padding: 1rem
+}
+.pricing h3 , .pricing h4 {
+    text-align: center;
+    color: black
+}
+.pricing ul {
+    list-style-type: none;
+    padding-left: 0
+}
+.pricing ul li {
+    color: #727272;
+    text-align: center
+}
+.premium {
+    border: 1px solid #fd602c;
+    background-color: #fd602c;
+    padding: 1rem;
+
+}
+.premium h3 , .premium h4 {
+    text-align: center;
+    color: white !important
+}
+.premium ul {
+    list-style-type: none;
+    padding-left: 0
+}
+.premium ul li {
+    color: white;
+    text-align: center
+}
+.premBtn {
+    background-color: white;
+}
+.premBtn p {
+    color: black;
+}
+.premBtn:hover p {
+    color: white
+}
+.ticket {
+    position: absolute;
+    left:  57%;
+    top: 22%
+}
+.parallax2 {
+    background-image: url("./Photos/parallax2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.parallax2::before {
+    position: absolute;
+    content: "";
+    background-color: #272727c9;
+    width: 100%;
+    height: 100%;
+}
+.prev , .next {
+    background-color: transparent;
+    border: none
+}
+#button {
+    border: 1px solid white;
+    background-color: #fd602c;
+    transition: 0.3s;
+    color: white;
+    padding: 1rem
+}
+#button:hover {
+    background-color: white;
+    border-color: white;
+    color: black
+}
+
+
+
+
+/* Footer starts */
+
+
+
+
+.footerUl li{
+    color: #727272;
+    list-style-type: none;
+    padding: 0.5rem 0
+}
+.footerImg{
+    display: flex
+}
+.footerImg h5{
+    color: white
+}
+.footerImg p {
+    color:#727272
+}
+.footerImg small{
+    color: #494747
+}
+.footerImg img {
+    border-radius: 50%;
+}
+.tag{
+    padding: 5px 15px 5px 15px;
+    margin: 0 10px 10px 0;
+    color: #727272;
+    border: 1px solid #2e2e2e;
+    transition: color 0.5s;
+    cursor: pointer;
+}
+.thisTag{
+    color: #fd602c;
+    border-color: #fd602c
+}
+.tag:hover {
+    color: #fd602c;
+    border-color: #fd602c;
+}
+.useLinks p {
+    color: #727272;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+.useLinks p:hover {
+    color: white
+}
+.mediaIcon {
+    font-size: 1rem;
+    color: #fd602c;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 1rem;
+    background-color:white;
+    cursor: pointer;
+    transition:color 0.5s;
+}
+.mediaIcon:hover {
+    color:white;
+    background-color: #fd602c;
+    border-color: #fd602c
+}
+.mediaIconThis{
+    color:white;
+    background-color: #fd602c;
+    border-color: #fd602c
+}

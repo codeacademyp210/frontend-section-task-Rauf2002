@@ -21,6 +21,12 @@ prevButton.addEventListener("click", function (e) {
     activeItem.classList.remove("active-slide");
     sContainer.style.transform = "translateX(-" + prevItem.style.left + ")";
   }
+  if (activeItem.previousElementSibling == null) {
+    let prevItem = activeItem.parentNode.lastElementChild;
+    prevItem.classList.add("active-slide");
+    activeItem.classList.remove("active-slide");
+    sContainer.style.transform = "translateX(-" + prevItem.style.left + ")";
+  }
 });
 // Click next button, slider move to the right
 nextButton.addEventListener("click", function (e) {
@@ -28,6 +34,12 @@ nextButton.addEventListener("click", function (e) {
   console.log(activeItem);
   if (activeItem.nextElementSibling) {
     let nextItem = activeItem.nextElementSibling;
+    nextItem.classList.add("active-slide");
+    activeItem.classList.remove("active-slide");
+    sContainer.style.transform = "translateX(-" + nextItem.style.left + ")";
+  }
+  if(activeItem.nextElementSibling == null) {
+    let nextItem = activeItem.parentElement.firstElementChild;
     nextItem.classList.add("active-slide");
     activeItem.classList.remove("active-slide");
     sContainer.style.transform = "translateX(-" + nextItem.style.left + ")";

@@ -311,7 +311,7 @@ input {
     border: 1px solid #fd602c;
     background-color: #fd602c;
     padding: 1rem;
-
+    transform: scaleY(1.1)
 }
 .premium h3 , .premium h4 {
     text-align: center;
@@ -337,7 +337,7 @@ input {
 .ticket {
     position: absolute;
     left:  57%;
-    top: 22%
+    top: 17%
 }
 .parallax2 {
     background-image: url("./Photos/parallax2.jpg");

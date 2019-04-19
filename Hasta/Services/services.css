@@ -166,6 +166,36 @@ h2 ,h4 {
 .cardP:hover {
     color:black
 }
+.more {
+    color: #242424;
+    transition: color 0.3s;
+    transition: background-color 0.3s;
+    border: 1px solid #e4e4e4;
+    padding: 0.4rem;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 1px
+}
+.more:hover {
+    color: white;
+    border-color: black;
+    background-color: black
+}
+.purchase {
+    color: #fd602c;
+    transition: color 0.3s;
+    transition: background-color 0.3s;
+    border: 1px solid #fd602c;
+    padding: 0.4rem 0.5rem;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 1px
+}
+.purchase:hover {
+    color: white;
+    border-color: #fd602c;
+    background-color: #fd602c
+}
 
 /* Footer starts */
 

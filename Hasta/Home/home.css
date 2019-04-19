@@ -352,9 +352,12 @@ input {
     width: 100%;
     height: 100%;
 }
-.prev , .next {
+.previous , .next {
     background-color: transparent;
     border: none
+}
+.previous:focus , .next:focus{
+    outline: none
 }
 #button {
     border: 1px solid white;
@@ -440,4 +443,24 @@ input {
     color:white;
     background-color: #fd602c;
     border-color: #fd602c
+}
+.sliderHolder {
+    position: relative;
+    width: 100%;
+    height: 15rem;
+    overflow: hidden;
+}
+.sliderItem {
+    position: absolute;
+    transition: all 1s
+}
+.sliderItem2 {
+    left: 1400px;
+    transition: all 1s
+}
+.sliderItem2 {
+    position: absolute
+}
+.buttonDiv {
+    top:9rem
 }
